@@ -1,0 +1,49 @@
+<!-- include header -->
+<%- include('include/_header')%>
+	<!-- /include header -->
+	<!-- main-section -->
+	<section class="content-section-second" id="user_info">
+		<div class="container content-section-second__container">
+			<div class="content-section-second__user-block">
+				<a href="/"><i class="fas fa-angle-double-left"></i> Back</a>
+				<h2 class="content-section-second__user_name">User info for <span>
+						<%= users.first_name %>
+							<%= users.last_name %>
+					</span></h2>
+			</div>
+			<div class="content-section-second__user-wrapper">
+				<div class="content-section-second__first-wrapper">
+					<p class="left-wrapper__pic"><img src="<%= users.photo_url %>" onError="this.style.display='none'"></p>
+				</div>
+				<div class="content-section-second__second-wrapper">
+					<div class="right-wrapper__text">
+						<p></p>
+						<p>First name:<span>
+								<%= users.first_name %>
+							</span></p>
+						<p>Last name: <span>
+								<%= users.last_name %>
+							</span></p>
+						<p>Email: <span>
+								<%= users.email %>
+							</span></p>
+						<p>Country: <span>
+								<%= users.country %>
+							</span></p>
+					</div>
+				</div>
+			</div>
+			<div class="content-section-second__hobbies-wrapper">
+				<h3 class="content-section-second__title">Hobbies:</h3>
+				<p class="content-section-second__text">
+					<%= users.hobbies %>
+				</p>
+			</div>
+			<div class="form-title text-center">
+			</div>
+	</section>
+	<!-- /main-section -->
+
+	<!-- include footer -->
+	<%- include('include/_footer')%>
+		<!-- /include footer -->

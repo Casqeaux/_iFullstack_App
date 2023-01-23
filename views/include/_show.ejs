@@ -1,0 +1,26 @@
+<% for(var i=0; i < users.length; i++) { %>
+	<tr>
+		<td>
+			<%= i + 1 %>
+		</td>
+		<td>
+			<%= users[i].first_name %>
+		</td>
+		<td>
+			<%= users[i].last_name %>
+		</td>
+		<td>
+			<%= users[i].email %>
+		</td>
+		<td>
+			<a href="/full-user?id=<%= users[i]._id%>" class="table__btn border-shadow whatch">
+				<span class="table-text__gradient"><i class="fas fa-search"></i></span>
+			</a>
+			<a class="table__btn border-shadow delete" data-id=<%=users[i]._id%>>
+				<span class="table-text__gradient"><i class="fas fa-times"></i></span>
+			</a>
+
+		</td>
+	</tr>
+
+	<% } %>

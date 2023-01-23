@@ -1,0 +1,49 @@
+<!-- include header -->
+<%- include('include/_header')%>
+	<!-- /include header -->
+
+	<!-- main-section -->
+	<section class="content-section" id="content">
+		<div class="container content-section__container">
+			<!-- form-body -->
+			<div class="content-section__wrapper">
+				<div class="content-section__user-button user-button">
+					<a href="#add" class=border-shadow__user>
+						<span class="user-button__gradient">New User <i class="fas fa-user"></i></span>
+					</a>
+				</div>
+				<form action="/" method="POST">
+					<table class="content-section__table">
+						<thead class="thead-dark">
+							<tr class="tr__dark">
+								<th>ID</th>
+								<th>Fist name</th>
+								<th>Last name</th>
+								<th>E-Mail</th>
+								<th>Action</th>
+							</tr>
+						</thead>
+			</div>
+			<tbody>
+				<%- include('include/_show') %>
+			</tbody>
+			</table>
+			<div class="content-section__pagination">
+				<ul class="pagination">
+					<li><a href="#">«</a></li>
+					<li><a class="active" clahref="#">1</a></li>
+					<li><a href="#">2</a></li>
+					<li><a href="#">3</a></li>
+					<li><a href="#">»</a></li>
+				</ul>
+			</div>
+			</form>
+			<%- include('include/_form') %>
+		</div>
+		</main>
+		</div>
+		<!-- /Main Site -->
+
+		<!-- include footer -->
+		<%- include('include/_footer') %>
+			<!-- /include footer -->

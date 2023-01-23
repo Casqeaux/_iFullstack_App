@@ -1,0 +1,51 @@
+<a href="#x" class="overlay" id="add"></a>
+<div class="popup">
+	<!-- form-body -->
+	<div class="form-title__text-left">
+		<h2 class="text-dark">Add user dialog</h2>
+	</div>
+
+	<form action="/api/users" method="POST" , id="add_user">
+		<div class="new_user">
+			<div class="form-group__add-user">
+				<label for="photo_url" class="text-light">Photo url:</label>
+				<input class="text" name="photo_url" value="" placeholder="Your avatar link?">
+			</div>
+
+			<div class="form-group__add-user">
+				<label for="first_name" class="text-light">Fist name:</label>
+				<input type="hidden" name="id" value="">
+				<input class="text" name="first_name" value="" placeholder="Your firts name?">
+			</div>
+
+			<div class="form-group__add-user">
+				<label for="last_name" class="text-light">Last name:</label>
+				<input type="hidden" name="id" value="">
+				<input class="text" name="last_name" value="" placeholder="Your last name?">
+			</div>
+
+			<div class="form-group__add-user">
+				<label for="Email" class="text-light">Email:</label>
+				<input class="text" name="email" value="" placeholder="example@gmail.com">
+			</div>
+
+			<div class="form-group__add-user">
+				<div class="form-group__container">
+					<label for="hobbies" class="form-group__title">Hobbies:</label>
+					<textarea autofocus class="text" name="hobbies" placeholder="What is your hobby?"></textarea>
+				</div>
+			</div>
+
+			<div class="form-group__last-add-user">
+				<label for="country" class="text-light">Country:</label>
+				<input class="text" name="country" value="" placeholder="Your country?">
+			</div>
+		</div>
+
+		<div class="form-group__add-user">
+			<button type="submit" class="btn__text-dark-add">Add user</button>
+		</div>
+	</form>
+	<!-- /form-body -->
+	<a class="close" title="Закрыть" href="#close"></a>
+</div>
